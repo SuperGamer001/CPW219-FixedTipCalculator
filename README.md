@@ -1,5 +1,5 @@
 # BrokenTipCalc-Start
-For this project you will debug and fix an app that has some existing errors. Click the "Use this template" green button and create a copy of
+For this project you will debug and fix an app that has some existing errors. Click the "Use this template" button and create a copy of
 this repo in your own account. Clone your copy of the repo.
 
 ## Requirements
