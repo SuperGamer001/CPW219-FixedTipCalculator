@@ -5,15 +5,15 @@ namespace TipCalculator.Models
     public class Calculator
     {
         [Required(ErrorMessage = "Please enter a value for cost of meal.")]
-        [Range(0.0, 10000000.0, ErrorMessage = "Cost of meal must be greater than zero.")]
+        [Range(0.0, 10000000.0, ErrorMessage = "Cost of meal must be between 0 and 10,000,000.")]
         public double? MealCost { get; set; }
 
         public double CalculateTip(double percent)
         {
             if (MealCost.HasValue)
             {
-                var tip = MealCost.Value / percent;
-                return tip
+                var tip = MealCost.Value * percent;
+                return tip;
             }
             else
             {
